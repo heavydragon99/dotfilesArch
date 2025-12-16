@@ -1,0 +1,14 @@
+# Sensitive files
+*_history
+*.log
+.ssh/
+.gnupg/
+
+# Cache directories
+.cache/
+.npm/
+.yarn/
+
+# Local state
+.local/state/
+EOF
