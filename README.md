@@ -271,8 +271,24 @@ Avoid tracking files that contain:
 Create a `.gitignore` file in your home directory to exclude sensitive or unnecessary files:
 
 ```bash
-# Add .gitignore to your home directory
-echo ".gitignore" >> ~/.gitignore
+# Create a .gitignore file with common exclusions
+cat > ~/.gitignore << 'EOF'
+# Sensitive files
+*_history
+*.log
+.ssh/
+.gnupg/
+
+# Cache directories
+.cache/
+.npm/
+.yarn/
+
+# Local state
+.local/state/
+EOF
+
+# Add .gitignore to the repository
 dotfiles add ~/.gitignore
 dotfiles commit -m "Add .gitignore"
 ```
