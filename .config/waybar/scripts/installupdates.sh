@@ -72,11 +72,11 @@ paru_installed="false"
 [[ $(_checkCommandExists "paru") == 0 ]] && paru_installed="true"
 
 if [[ $yay_installed == "true" ]] && [[ $paru_installed == "false" ]]; then
-  yay -Syu --noconfirm
+  yay -Syu
 elif [[ $yay_installed == "false" ]] && [[ $paru_installed == "true" ]]; then
-  paru -Syu --noconfirm
+  paru -Syu
 else
-  yay -Syu --noconfirm
+  yay -Syu
 fi
 
 # ---------------------------

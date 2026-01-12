@@ -27,10 +27,7 @@
     "tooltip-format": "{title}",
     "on-click": "activate",
     "on-click-middle": "close",
-    "ignore-list": [
-      "Alacritty",
-      "kitty"
-    ],
+    "ignore-list": ["Alacritty", "kitty"],
     "app_ids-mapping": {
       "firefoxdeveloperedition": "firefox-developer-edition"
     },
@@ -90,7 +87,7 @@
     "interval": 1800,
     "signal": 1,
     "hide-empty-text": true,
-    "on-click": "~/.config/waybar/scripts/installupdates.sh"
+    "on-click": "kitty ~/.config/waybar/scripts/installupdates.sh"
   },
   // Rofi Application Launcher
   "custom/appmenuicon": {
@@ -192,13 +189,7 @@
       "children-class": "not-memory",
       "transition-left-to-right": false
     },
-    "modules": [
-      "custom/system",
-      "disk",
-      "cpu",
-      "memory",
-      "hyprland/language"
-    ]
+    "modules": ["custom/system", "disk", "cpu", "memory", "hyprland/language"]
   },
   // Group Tools
   "group/tools": {
@@ -243,13 +234,7 @@
     "format-alt": "{icon}  {time}",
     "format-good": "", // An empty format will hide the module
     // "format-full": "",
-    "format-icons": [
-      " ",
-      " ",
-      " ",
-      " ",
-      " "
-    ]
+    "format-icons": [" ", " ", " ", " ", " "]
   },
   // Power Profiles Daemon
   "power-profiles-daemon": {
@@ -279,11 +264,7 @@
       "phone": " ",
       "portable": "",
       "car": " ",
-      "default": [
-        "",
-        "",
-        ""
-      ]
+      "default": ["", "", ""]
     },
     "on-click": "pavucontrol"
   },
