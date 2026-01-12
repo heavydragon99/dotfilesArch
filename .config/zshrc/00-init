@@ -110,3 +110,6 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias dotfiles='/usr/bin/git --git-dir=/home/sean/.dotfiles/ --work-tree=/home/sean'
+
+export EDITOR=nvim
+export VISUAL=nvim
