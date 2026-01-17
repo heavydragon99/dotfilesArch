@@ -137,6 +137,7 @@ return {
 
     -- Keymaps
     vim.keymap.set("n", "<F5>", dap.continue, { desc = "DAP: Continue" })
+    vim.keymap.set("n", "<S-F5>", dap.terminate, { desc = "DAP: Stop" })
     vim.keymap.set("n", "<F10>", dap.step_over, { desc = "DAP: Step Over" })
     vim.keymap.set("n", "<F11>", dap.step_into, { desc = "DAP: Step Into" })
     vim.keymap.set("n", "<F12>", dap.step_out, { desc = "DAP: Step Out" })
